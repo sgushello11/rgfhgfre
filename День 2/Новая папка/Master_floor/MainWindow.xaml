@@ -1,0 +1,27 @@
+﻿<Window x:Class="Master_floor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Master Floor" Height="500" Width="800">
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Таблица партнеров -->
+        <DataGrid x:Name="dgPartners" Grid.Row="0" AutoGenerateColumns="True" Margin="0,0,0,10"/>
+
+        <!-- Информация -->
+        <TextBlock x:Name="tbInfo" Grid.Row="1" Margin="0,0,0,10"/>
+
+        <!-- Кнопки -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="btnAdd" Content="Добавить" Width="80" Margin="5" Click="BtnAdd_Click"/>
+            <Button x:Name="btnEdit" Content="Изменить" Width="80" Margin="5" Click="BtnEdit_Click"/>
+            <Button x:Name="btnDelete" Content="Удалить" Width="80" Margin="5" Click="BtnDelete_Click"/>
+            <Button x:Name="btnHistory" Content="История" Width="80" Margin="5" Click="BtnHistory_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

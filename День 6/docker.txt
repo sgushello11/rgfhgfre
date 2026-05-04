@@ -1,0 +1,28 @@
+services:
+  piper:
+    image: rhasspy/wyoming-piper
+    container_name: piper
+    command: --voice en_US-lessac-medium
+    volumes:
+      - /home/your_user/piper_data:/data
+    restart: unless-stopped
+    networks:
+      - tts_network
+
+  http_server:
+    image: rhasspy/wyoming-piper
+    container_name: piper-http
+    command: script/run_http --uri 'tcp://piper:10200'
+    ports:
+      - "5000:5000"
+    environment:
+      - TZ=Europe/Moscow
+    depends_on:
+      - piper
+    restart: unless-stopped
+    networks:
+      - tts_network
+
+networks:
+  tts_network:
+    driver: bridge

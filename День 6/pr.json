@@ -1,0 +1,44 @@
+[
+  {
+    "_id": { "$oid": "70a1b2c3d4e5f6a7b8c9d000" },
+    "name": "Механическая клавиатура Logitech MX",
+    "category": "Электроника",
+    "price": 12990,
+    "in_stock": true,
+    "specs": {
+      "color": "черный",
+      "switch_type": "Brown",
+      "backlight": "RGB"
+    },
+    "tags": ["клавиатура", "работа", "подарок"],
+    "warehouse_qty": 45
+  },
+  {
+    "_id": { "$oid": "70a1b2c3d4e5f6a7b8c9d001" },
+    "name": "Термокружка Stanley 0.5L",
+    "category": "Спорт и отдых",
+    "price": 3490,
+    "in_stock": true,
+    "specs": {
+      "color": "зеленый",
+      "volume_ml": 500,
+      "material": "нержавеющая сталь"
+    },
+    "tags": ["термокружка", "поход", "авто"],
+    "warehouse_qty": 120
+  },
+  {
+    "_id": { "$oid": "70a1b2c3d4e5f6a7b8c9d002" },
+    "name": "Книга 'Чистый код' Р. Мартин",
+    "category": "Книги",
+    "price": 890,
+    "in_stock": false,
+    "specs": {
+      "pages": 464,
+      "language": "русский",
+      "cover": "мягкая"
+    },
+    "tags": ["книга", "программирование", "обучение"],
+    "warehouse_qty": 0
+  }
+]

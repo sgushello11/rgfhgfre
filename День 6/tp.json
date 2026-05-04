@@ -1,0 +1,44 @@
+[
+  {
+    "_id": { "$oid": "60f7b1c5b3e4a32d4c8b4567" },
+    "username": "alex_smirnov",
+    "email": "alex.smirnov@email.ru",
+    "age": 28,
+    "address": {
+      "city": "Москва",
+      "street": "Тверская, 15",
+      "zip": "125009"
+    },
+    "hobbies": ["фотография", "бег", "Python"],
+    "orders_count": 5,
+    "created_at": { "$date": "2024-01-15T10:30:00Z" }
+  },
+  {
+    "_id": { "$oid": "60f7b1c5b3e4a32d4c8b4568" },
+    "username": "elena_volkova",
+    "email": "elena.v@email.ru",
+    "age": 32,
+    "address": {
+      "city": "Санкт-Петербург",
+      "street": "Невский, 100",
+      "zip": "191025"
+    },
+    "hobbies": ["йога", "чтение", "кулинария"],
+    "orders_count": 12,
+    "created_at": { "$date": "2023-05-20T14:15:00Z" }
+  },
+  {
+    "_id": { "$oid": "60f7b1c5b3e4a32d4c8b4569" },
+    "username": "dmitry_k",
+    "email": "dmitry.k@email.ru",
+    "age": 24,
+    "address": {
+      "city": "Казань",
+      "street": "Баумана, 45",
+      "zip": "420111"
+    },
+    "hobbies": ["гейминг", "баскетбол", "DevOps"],
+    "orders_count": 2,
+    "created_at": { "$date": "2024-11-01T08:00:00Z" }
+  }
+]
